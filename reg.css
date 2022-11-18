@@ -19,13 +19,23 @@ font-family: 'Merriweather', serif;
     border: solid 2px;
     width: 20em;
     padding: 2em;
-    padding-right: 25vw;
+    padding-right: 28vw;
     padding-left: 5vw;
     background-color: rgba(255,255,255,0.5);
 }
 input{
     width: 18vw;
     height: 5vh;
+    border-radius: 6px;
+    box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
+    -moz-box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
+    box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
+}
+textarea{
+    border-radius: 6px;
+    box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
+    -moz-box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
+    box-shadow: 7px 9px 16px -6px rgba(0,0,0,0.66);
 }
 input.fname{
     width: 21vw;
@@ -34,9 +44,13 @@ input.fname{
     display: inline;
     border-radius: 40px;
     cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    font-size: larger;
 }
 .res{
     display: inline;
     border-radius: 40px;
     cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    font-size: larger;
 }
