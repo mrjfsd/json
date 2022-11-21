@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
 }
-p{
+h1{
     text-align: center;
     background-color: rgb(89, 73, 196);
     color: beige;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 body{
     background-color: rgb(94, 84, 155);
@@ -39,4 +39,9 @@ label{
    left: 9.5vh;
    padding: 1.5vh 2vh;
    font-size: larger;
+}
+@media screen and (max-width: 360px) {
+    h1{
+        font-size: 9vw;
+    }
 }
