@@ -4,12 +4,12 @@
 }
 h1{
     text-align: center;
-    background-color: rgb(89, 73, 196);
-    color: beige;
+    background-color: rgb(38, 180, 223);
+    color: rgb(224, 224, 212);
     font-size: 4vw;
 }
 body{
-    background-color: rgb(94, 84, 155);
+    background-color: rgb(43, 97, 160);
 }
 .login{
     display: flex;
@@ -23,7 +23,7 @@ body{
    border: solid black;
    border-radius:4px ;
    padding: 4vh 5vw;
-   background-color: rgb(112, 102, 182);
+   background-color:rgb(243, 230, 215);
 }
 label{
     font-size: 3vh;
@@ -34,11 +34,12 @@ label{
     border-radius: 2.5px;
     border: solid 0.5px;
 }
-#but{
+.but{
    position: relative;
    left: 9.5vh;
    padding: 1.5vh 2vh;
    font-size: larger;
+   text-decoration: none;
 }
 @media screen and (max-width: 360px) {
     h1{
