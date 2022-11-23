@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="log.css">
     <title>login</title>
+    
 </head>
 <body>
     <h1>Login Form</h1>
     <div class="login">
-        <form class="logg" action="demo.html">
+        <form class="logg" >
         <label>Email Id</label><br>
-        <input type="email" name="Email Id" class="lo"  required placeholder="Example@gmail.com"> <br>
+        <input type="text" name="username Id" class="lo"  required placeholder="username" id="username"> <br>
         <br><span class="error"><p id="email_error"></p></span>
         <label>Password</label><br>
-        <input type="password" name="Password" class="lo" >
+        <input type="password" name="Password" class="lo" id="password" >
         <br> <br>
-        <button type="submit" name="submit" value="Submit"  required class="but" >Submit</button> <br>
+        <button type="submit" name="submit" value="Submit"  required class="but"  onclick="getinfo()" >Submit</button> <br>
         <br>
         <a  class="but" href="reg.html">Register</a>
 
     </form>
     </div>
-    
+    <script src="log.js"></script>
 </body>
 </html>

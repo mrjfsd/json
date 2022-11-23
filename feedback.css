@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: blanchedalmond;
+}
+body{
+    background-color: rgb(227, 200, 166);
+}
+#text{
+    width: 19vw;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15vh;
+    left: 0vw;
+   
+}
+table{
+    border: solid black;
+    background-color: white;
+    padding: 2vw;
+    border-width: 3px;
+    box-shadow: 2px 2px 3px black;
+}
+tr{
+    padding: 5vh;
+}
+h1{
+    text-align: center;
+}
+.another{
+    
+    text-align: left;
+}
+.less{
+    padding-right: 0vw;
+}
+td{
+    padding: 2vh 0vw;
+}
+.radio{
+   padding: 2vw;
+   font-size: 2vw;
+}
+.bade{
+    font-size: larger;
+    width: 18vw;
+    height: 4vh;
+    border-radius: 3px;
+   
+}
+.lab{
+    font-size: 2vw;
+}
+textarea{
+    border-radius: 4px;
+    padding: 1vw;
+}
+button{
+    position: relative;
+    left: 11vw;
+    width: 11vw;
+    height: 7vh;
+    font-size: 2vw;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
