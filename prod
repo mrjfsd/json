@@ -1,37 +1,50 @@
-import {useState} from 'react';
 import './App.css';
-
+import {useState} from 'react';
 function App() {
 const [list,setList]=useState([])
 const [value,setValues]=useState('')
-const addtolist=()=>{
+
+const additem=()=>{
   let temparr=list;
+  if(value.length>=1){
   temparr.push(value);
+  }
   setList(temparr)
-  setValues("")
+  setValues("");
 }
 const deleteitem=(index)=>{
   let temp=list.filter((item,i)=> i !==index);
   setList(temp);
 }
-
   return (
     <div className="App">
       <fieldset>
-        <h3>
-          Adding product to list
-        </h3>
-        <input type="text" value={value} onChange={(e)=>setValues(e.target.value)} />
-        <button onClick={addtolist}>Add</button>
-        <h3>
-          click on product to delete
-        </h3>
+        <h3>Add Item to List</h3>
+        <input type="text" value={value} onChange={(e)=> setValues(e.target.value)} />
+        <button onClick={additem}>Click to add</button>
         <ol>
-          {list.map((item,i)=> <li onClick={()=>deleteitem(i)}>{item}</li>)}
+          <h3>Click on Delete to delete Item</h3>
+          {list.map((item,i)=> <><li onClick={() => deleteitem()}>{item}</li><button className='butt' onClick={() => deleteitem(i)}>Delete</button></>)} 
+        
         </ol>
       </fieldset>
+
     </div>
   );
 }
 
 export default App;
+
+
+//css
+fieldset{
+  width: 350px;
+  position: relative;
+  left: 35vw;
+  top: 33vh;
+}
+.butt{
+  position: relative;
+  left: 4vw;
+  bottom: 3vh;
+}
