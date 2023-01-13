@@ -1,0 +1,37 @@
+import {useState} from 'react';
+import './App.css';
+
+function App() {
+const [list,setList]=useState([])
+const [value,setValues]=useState('')
+const addtolist=()=>{
+  let temparr=list;
+  temparr.push(value);
+  setList(temparr)
+  setValues("")
+}
+const deleteitem=(index)=>{
+  let temp=list.filter((item,i)=> i !==index);
+  setList(temp);
+}
+
+  return (
+    <div className="App">
+      <fieldset>
+        <h3>
+          Adding product to list
+        </h3>
+        <input type="text" value={value} onChange={(e)=>setValues(e.target.value)} />
+        <button onClick={addtolist}>Add</button>
+        <h3>
+          click on product to delete
+        </h3>
+        <ol>
+          {list.map((item,i)=> <li onClick={()=>deleteitem(i)}>{item}</li>)}
+        </ol>
+      </fieldset>
+    </div>
+  );
+}
+
+export default App;
