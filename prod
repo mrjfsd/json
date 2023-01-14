@@ -19,11 +19,11 @@ const deleteitem=(index)=>{
   return (
     <div className="App">
       <fieldset>
-        <h3>Add Item to List</h3>
-        <input type="text" value={value} onChange={(e)=> setValues(e.target.value)} />
-        <button onClick={additem}>Click to add</button>
+        <h3 className='add'>Add Item to List</h3>
+        <input type="text" value={value} placeholder="Enter an Item" onChange={(e)=> setValues(e.target.value)} />
+        <button onClick={additem} className='but'>Click to add</button>
         <ol>
-          <h3>Click on Delete to delete Item</h3>
+          <h3 className='dd'>Added Items</h3>
           {list.map((item,i)=> <><li onClick={() => deleteitem()}>{item}</li><button className='butt' onClick={() => deleteitem(i)}>Delete</button></>)} 
         
         </ol>
@@ -37,14 +37,41 @@ export default App;
 
 
 //css
+body{
+    background-image:url(wall.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 fieldset{
-  width: 350px;
-  position: relative;
-  left: 35vw;
-  top: 33vh;
-}
-.butt{
-  position: relative;
-  left: 4vw;
-  bottom: 3vh;
-}
+    width: 350px;
+    position: relative;
+    left: 35vw;
+    top: 33vh;
+  }
+  .butt{
+    position: relative;
+    left: 13.7vw;
+    bottom: 3vh;
+    width: 6vw;
+    background-color: red;
+    color: rgb(255, 255, 255);
+  border-radius: 5px;
+  }
+  .add{
+    text-align: center;
+  }
+  .dd{
+    position: relative;
+    left: 5.7vw;
+  }
+  input{
+    position: relative;
+    left: 3vw;
+    width: 10vw;
+  }
+  .but{
+    position: relative;
+    left: 6vw;
+    background: green;
+    color: antiquewhite;
+  }
